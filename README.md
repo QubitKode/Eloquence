@@ -9,13 +9,10 @@ A **Streamlit**‑based web application to upload PDF documents and interact wit
 * 📄 **PDF Upload & Parsing**
 
   * Extract text, tables, graphs, and images.
-* ⚡ **Fast Retrieval**
-
-  * Index & cache document data for instant lookup.
 * 🤖 **AI‑Powered Q\&A**
 
   * Ask natural language questions and get context‑aware answers.
-* 👥 **Persona‑Based Responses**
+* 👥 **Persona‑Based Agentic Responses**
 
   * Choose between **Expert** or **Intermediate** modes.
 * 🖼️ **Rich Citations & Visuals**

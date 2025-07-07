@@ -37,23 +37,39 @@ A **Streamlit**-based web application to upload PDF documents and interact with 
 ### Clone & Install
 
 ```bash
-# Clone the repo
 git clone https://github.com/your-username/eloquence.git
+bash
+Copy
+Edit
 cd eloquence
-
-# (Optional) Create & activate a virtual environment
+bash
+Copy
+Edit
 python -m venv venv
-# Windows
+bash
+Copy
+Edit
+# On Windows
 venv\Scripts\activate
-# macOS/Linux
+bash
+Copy
+Edit
+# On macOS/Linux
 source venv/bin/activate
-
-# Install dependencies
+bash
+Copy
+Edit
 pip install -r requirements.txt
 Configure API Key
 Open config.py.
 
-Replace the placeholder GENAI_API_KEY = "YOUR_API_KEY_HERE" with your actual key.
+Replace the placeholder:
+
+python
+Copy
+Edit
+GENAI_API_KEY = "YOUR_API_KEY_HERE"
+with your actual key.
 
 ▶️ Running the App
 bash
@@ -61,6 +77,7 @@ Copy
 Edit
 streamlit run app_with_persona.py
 This will launch Eloquence in your default browser.
+
 
 🖱️ Usage
 Upload PDF via the sidebar uploader.

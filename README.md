@@ -1,6 +1,6 @@
 # Eloquence
 
-A **Streamlit**‑based web application to upload PDF documents and interact with them using advanced AI‑powered retrieval and language models. Powered by **Google Gemini API** and **HuggingFace** embeddings, Eloquence allows you to ask natural‑language questions about any PDF—tailored to different user personas.
+A **Streamlit**‑based Agentic RAG to upload PDF documents and interact with them using advanced AI‑powered retrieval and language models. Powered by **Google Gemini API** and **HuggingFace** embeddings, Eloquence allows you to ask natural‑language questions about any PDF - tailored to different user personas.
 
 ---
 

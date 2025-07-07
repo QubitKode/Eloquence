@@ -11,13 +11,12 @@ import config
 
 # Streamlit page configuration
 st.set_page_config(
-    page_title="PDF Question-Answering System with Personas",
-    page_icon="📄",
+    page_title="Eloquence",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS for a more professional look
+# Custom CSS
 st.markdown("""
 <style>
     .main {

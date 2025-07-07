@@ -1,68 +1,105 @@
-Eloquence is a Streamlit-based web application that allows users to upload PDF documents and ask questions about their content using advanced AI-powered retrieval and language models. The app leverages Google Gemini API and HuggingFace embeddings to provide accurate and context-aware answers. It supports different user personas (Expert and Intermediate) to tailor responses accordingly.
+[![Python Version](https://img.shields.io/badge/Python-3.8%2B-green)](https://www.python.org/)  
+[![Streamlit](https://img.shields.io/badge/Streamlit-✔️-orange)](https://streamlit.io/)  
+[![Google Gemini API](https://img.shields.io/badge/Google%20Gemini%20API-Configured-blueviolet)](https://ai.google/studio)  
 
-## Features
+# Eloquence
 
-- Upload and parse PDF documents for content extraction along with the visuals (Table, Graph, Images).
-- Index and cache document data for fast retrieval.
-- Ask natural language questions about the uploaded documents.
-- Persona-based Agentic responses: choose between Expert and Intermediate user types.
-- Display answers with citations, visual content (images, diagrams, tables), and additional explanations.
-- Configuration panel for API key input and persona selection.
-- Caching mechanism to avoid reprocessing PDFs unnecessarily.
+A **Streamlit**-based web application to upload PDF documents and interact with them using advanced AI-powered retrieval and language models. Powered by **Google Gemini API** and **HuggingFace** embeddings, Eloquence allows you to ask natural-language questions about any PDF—tailored to different user personas.
 
-## Setup and Installation
+---
+
+## 🚀 Features
+
+- 📄 **PDF Upload & Parsing**  
+  - Extract text, tables, graphs, and images.  
+- ⚡ **Fast Retrieval**  
+  - Index & cache document data for instant lookup.  
+- 🤖 **AI-Powered Q&A**  
+  - Ask natural language questions and get context-aware answers.  
+- 👥 **Persona-Based Responses**  
+  - Choose between **Expert** or **Intermediate** modes.  
+- 🖼️ **Rich Citations & Visuals**  
+  - Inline citations, diagrams, tables, and extracted images.  
+- ⚙️ **Config Panel**  
+  - Enter your API key, select persona, toggle force reprocess.  
+- 💾 **Caching**  
+  - Reuse previously processed PDFs for speed.
+
+---
+
+## 📥 Installation & Setup
 
 ### Prerequisites
 
-- Python 3.8 or higher
-- Google Gemini API key (Get Your free API key from Google AI Studio)
+- **Python** ≥ 3.8  
+- **Google Gemini API key** (Get yours at [Google AI Studio](https://ai.google/studio))
 
-### Installation Steps
-
-1. Clone the repository or download the source code.
-
-2. (Optional but recommended) Create and activate a virtual environment:
+### Clone & Install
 
 ```bash
+# Clone the repo
+git clone https://github.com/your-username/eloquence.git
+cd eloquence
+
+# (Optional) Create & activate a virtual environment
 python -m venv venv
-# On Windows
+# Windows
 venv\Scripts\activate
-# On macOS/Linux
+# macOS/Linux
 source venv/bin/activate
-Install the required dependencies:
+
+# Install dependencies
 pip install -r requirements.txt
-Configure your Google Gemini API key:
-Open config.py
-Replace the placeholder value of GENAI_API_KEY with your actual API key.
+Configure API Key
+Open config.py.
 
-Running the Application
-Start the Streamlit app by running:
+Replace the placeholder GENAI_API_KEY = "YOUR_API_KEY_HERE" with your actual key.
 
+▶️ Running the App
+bash
+Copy
+Edit
 streamlit run app_with_persona.py
-This will open the web app in your default browser.
+This will launch Eloquence in your default browser.
 
-Using the App
-Upload a PDF document using the file uploader in the sidebar.
+🖱️ Usage
+Upload PDF via the sidebar uploader.
 
-Optionally, select "Force reprocessing" to re-index the document even if cached data exists.
+Force Reprocessing (optional) to ignore cache.
 
-Choose the user persona (Expert or Intermediate) to tailor the responses.
+Select Persona:
 
-Ask questions about the document in the input box.
+Expert for deep, technical answers.
 
-View answers with citations, visual content, and additional explanations depending on the persona.
+Intermediate for simplified, high-level explanations.
 
-Previously processed PDFs are cached and can be loaded from the sidebar for faster access.
+Ask Questions in the input box.
 
-Project Structure Overview
-app_with_persona.py: Main Streamlit app file.
-config.py: Configuration for API keys and model settings.
-ingest.py: PDF parsing and content extraction.
-storage.py: Document storage and indexing.
-retrieval.py: Retrieval of relevant document chunks.
-persona_retrieval.py: Persona-based retrieval logic.
-agent.py, tools.py: Supporting modules for AI interaction and utilities.
-vector_db_cache/: Directory for cached document data.
-output/: Temporary files and extracted images.
-Contributing
-Contributions are welcome! Please open issues or submit pull requests for improvements or bug fixes.
+View Answers with inline citations and visuals.
+
+📂 Project Structure
+bash
+Copy
+Edit
+├── app_with_persona.py      # Streamlit app entrypoint
+├── config.py                # API keys & settings
+├── ingest.py                # PDF parsing & extraction
+├── storage.py               # Document caching & indexing
+├── retrieval.py             # Chunk retrieval logic
+├── persona_retrieval.py     # Persona-based query handling
+├── agent.py                 # AI agent orchestration
+├── tools.py                 # Utility functions
+├── vector_db_cache/         # Cached embeddings & indexes
+└── output/                  # Temp files & extracted assets
+🤝 Contributing
+Contributions are welcomed! Please:
+
+Fork the repository
+
+Create a feature branch (git checkout -b feature/YourFeature)
+
+Commit your changes (git commit -m 'Add some feature')
+
+Push to the branch (git push origin feature/YourFeature)
+
+Open a Pull Request

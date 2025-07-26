@@ -38,7 +38,7 @@ https://github.com/user-attachments/assets/4f853156-cda9-402a-afb5-8e74e0f42a70
 ### Prerequisites
 
 * **Python** ≥ 3.8
-* **Google Gemini API key** (Get yours at [Google AI Studio](https://ai.google/studio))
+* **Google Gemini API key** (Get yours at [Google AI Studio](https://ai.google.dev/aistudio))
 
 ### Clone & Install
 
